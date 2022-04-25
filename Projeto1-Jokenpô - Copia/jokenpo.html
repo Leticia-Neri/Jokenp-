@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Jokenpô</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="jokenpo.css" rel="stylesheet">
+    <script src="jokenpo.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center mt-5">Jokenpô</h1>
+    </header>
+    <section class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-6 h2">
+                <span id="vitoriasJog1"> 0 vitórias </span>
+            </div>
+            <div class="col-6 h2">
+                <span id="vitoriasJog2"> 0 vitórias </span>
+            </div>
+            <div class="col-6 mt-3 h4 d-flex flex-column justify-content-center align-items-center">
+                <span class="mb-3"> Jogador 1 </span>
+                <select class="form-select w-50" id="escolha">
+                    <option value="pedra">pedra</option>
+                    <option value="papel">papel</option>
+                    <option value="tesoura">tesoura</option>
+                </select>
+            </div>
+            <div class="col-6 mt-3 h4">
+                <span> Jogador 2 </span>
+            </div>
+        </div>
+        <button class="btn btn-lg btn-success " onclick="jogador1.escolha()">Jogar</button>
+    </section>
+
+    <section class="container mt-5">
+        <table class="table table-striped table-hover " id="table">
+            <thead class="text-center">
+                <tr>
+                    <th>Jogador 1</th>
+                    <th>Jogador 2</th>
+                    <th>Vencedor</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>
